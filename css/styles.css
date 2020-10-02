@@ -12,20 +12,23 @@ body {
 }
 
 .bg-image{
-  position: absolute;
+  position: fixed;
     left: 0px;
     top: 0px;
     z-index: -1;
-opacity: 0.96;
-width:100%;
+    opacity: 1.5;
+    width:100%;
+    transition-delay: 2s;
 }
 
 h1 {
-  font-family: "Montserrat-Black", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  padding: 3% 15%;
-  text-align: left;
+  
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding: 50%;
+  
+  
 }
 
 h2 {
@@ -34,46 +37,35 @@ h2 {
   line-height: 1.5;
 }
 
-.navi{
-  background-color: #222831;
-  z-index: 1;
-  width:100%;
-  margin-right: 0px;
-  margin-left: 0px;
-}
+
 /* navigationbar */
+
+
 .navbar {
-  padding: 0 4.5rem;
-padding-left:30px;
+  padding: 4.5rem 0 4.5rem;
+  color:white;
+ 
 }
 
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
-  left: 40px;
 }
 
 .nav-item {
   padding: 0 18px;
-  font-family: "Ubuntu";
+  font-size: medium;
+  font-weight: 300;
+  color: #fff;
 }
 
 .nav-link {
   font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+  color: #fff;
 }
 
-.collapse-navbar-collapse {
-  width:90%;
-  padding-left: 50%;
-}
-
-.title-row {
-  padding: 30px 0px 80px 0;
-  padding-bottom:
-  margin: 0;
-  text-align: center;
-}
 
 /* Download buttons*/
 .download-button {
@@ -82,39 +74,75 @@ padding-left:30px;
 
 /*title image*/
 .title-image {
-
-  right: 13%;
-  width: 22%;
+  width: 50px;
   transform: rotate(25deg);
   position: absolute;
+  
+  padding-left: 900px;
 }
 
-.col-lg-6-title-button-class
+.phone{
+  width: 60%;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+  #title {
+   
+    color: #fff;
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+  }
+
+
+
+
+.navbar-toggler{
+  color:white;
+  background-color: #fff;
+}
+
+
+.container-fluid{
+  padding: 3% 15% 7%;
+  width:100%;
+  
+}
+
+
+.button-class
 {
+  color:white;
   padding-left:0px;
 }
-.col-lg-6-title-image-class {
 
-  padding-right: 0;
-  z-index: 1;
-}
 
 .list {
   right: 10%;
 }
 
 /* feature*/
-#features {
-  padding: 10% 20%;
-  background-color: #fff;
-  position: relative;
-  z-index: 1;
+#features{
+
+  padding:5%;
+  color:inherit;
+  background-color: white;
+
+  width: 100%;
+  margin-bottom: 15%;
+}
+.feature-box{
+  align-items: center;
+  text-align:center;
 }
 
 .feature-title {
   font-size: 1.5rem;
   text-align: center;
-padding: 3% 3% 3% 0;
+  padding: 3% 3% 3% 0;
+  color:black;
 }
 
 p {
@@ -157,8 +185,13 @@ padding:3%;
 
 /* pricing*/
 #pricing {
+  margin: auto;
   padding: 100px;
   text-align: center;
+}
+
+#pricing .change-color{
+  color:white;
 }
 
 .padding-column {
@@ -187,37 +220,33 @@ margin-right: 20%;
   padding: 80px 0;
 }
 
-.container-fluid {
-  width: 70%;
-}
+
 
 .big-heading {
   padding: 30px;
 }
 
 #footer {
-  background-color: #ffff;
+
   text-align: center;
 }
 
-.container-fluid {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  padding-right: auto;
-  padding-left: auto;
-}
 
-.footer-class {
-  margin: 40px;
+
+.footer-class p{
+  color: white;
+
 }
 
 .icon-f {
-  margin: 10px 10px;
-  color: black;
+
+  color: white;
 }
 .l
 {
+  color:white;
   margin-left: 0px;
+  padding: 20%;
 }
 @media(max-width:1028px) {
   #title {
@@ -230,15 +259,12 @@ margin-right: 20%;
   }
 
   .title-image {
-    left: 3%;
-    text-align: center;
     position: static;
-    width: 85%;
-    transform: rotate(45);
+    transform: rotate(0);
+    
   }
 
-  .col-lg-6-title-image-class {
-    margin: 60px;
-    text-align: center;
-  }
+
+
+
 }
