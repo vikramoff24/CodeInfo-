@@ -11,14 +11,18 @@ body {
   color:white;
 }
 
+.con p{
+  font-size: xx-large;
+}
+
 .bg-image{
-  position: fixed;
-    left: 0px;
-    top: 0px;
+    
+    
+    position: absolute;
     z-index: -1;
     opacity: 1.5;
     width:100%;
-    transition-delay: 2s;
+    
 }
 
 h1 {
@@ -33,31 +37,41 @@ h1 {
 
 h2 {
   font-family: "Montserrat-Black";
-  font-size: 3rem;
+  font-size: 100px;
   line-height: 1.5;
 }
 
 
 /* navigationbar */
-
+.navbar-section{
+  padding:25px 30px;
+  background-color: #222831;
+}
 
 .navbar {
-  padding: 4.5rem 0 4.5rem;
-  color:white;
+ 
+ background-color: #222831;
+ width: 100%;
+ padding: 200px;
  
 }
 
 .navbar-brand {
   font-family: "Ubuntu";
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bold;
+  margin-left: 40px;
 }
 
 .nav-item {
   padding: 0 18px;
-  font-size: medium;
+  font-size:50px;
   font-weight: 300;
   color: #fff;
+  
+}
+.navbar-nav{
+  margin-right: 55px;
 }
 
 .nav-link {
@@ -74,17 +88,21 @@ h2 {
 
 /*title image*/
 .title-image {
-  width: 50px;
-  transform: rotate(25deg);
-  position: absolute;
   
-  padding-left: 900px;
+  transform: rotate(25deg);
+  width:50%;
+ padding-left: ;
+  
 }
 
 .phone{
-  width: 60%;
-  margin-top: 50px;
-  margin-left: 15%;
+  width: 35%;
+  margin-left: 220px;
+  margin-bottom: 30px;
+  margin-top:70px;
+  
+  
+  
 }
   #title {
    
@@ -92,25 +110,10 @@ h2 {
     text-align: left;
   }
   
-  #title .container-fluid {
-    padding: 3% 15% 7%;
-  }
-
-
-
-
-.navbar-toggler{
-  color:white;
-  background-color: #fff;
-}
-
-
-.container-fluid{
-  padding: 3% 15% 7%;
-  width:100%;
-  
-}
-
+ .container-fluid{
+  overflow: hidden;    
+  /* removes blank space */
+ } 
 
 .button-class
 {
@@ -128,10 +131,10 @@ h2 {
 
   padding:5%;
   color:inherit;
-  background-color: white;
-
+  background-color:white;
+  align-content: center;
   width: 100%;
-  margin-bottom: 15%;
+  
 }
 .feature-box{
   align-items: center;
@@ -148,6 +151,7 @@ h2 {
 p {
   font-family: "Ubuntu";
   color: #8f8f8f;
+  font-size: 15px;
 }
 
 h3 {
@@ -168,13 +172,17 @@ h3 {
   text-align: center;
   background-color: #222831;
   color: #ffff;
-padding:3%;
+  padding:5%;
 }
 #websites {
   background-color: #393e46;
   text-align: center;
   width: 100%;
 
+}
+.content p{
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .press-logo {
@@ -191,7 +199,18 @@ padding:3%;
 }
 
 #pricing .change-color{
-  color:white;
+  color:black;
+   
+
+}
+
+#pricing p{
+  font-size: x-large;
+}
+
+#pricing h2{
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 .padding-column {
@@ -227,26 +246,22 @@ margin-right: 20%;
 }
 
 #footer {
-
+   background-color: #222831;
   text-align: center;
 }
 
 
 
-.footer-class p{
-  color: white;
 
-}
 
-.icon-f {
-
-  color: white;
-}
 .l
 {
   color:white;
   margin-left: 0px;
   padding: 20%;
+  font-size: 50px;
+  text-align: left;
+  
 }
 @media(max-width:1028px) {
   #title {
@@ -259,9 +274,9 @@ margin-right: 20%;
   }
 
   .title-image {
-    position: static;
+    position: fixed;
     transform: rotate(0);
-    
+    align-content: center;
   }
 
 
